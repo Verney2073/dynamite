@@ -6,7 +6,7 @@ class Bot {
         let drawCount = 0;
         let currentRound = gamestate.rounds.length; //careful of 0-indexing here, round '1' is index '0'
 
-        //Section 1 - coutning how many different moves have been made
+        //Section 1 - counting how many different moves have been made
         if (currentRound > 2) {
             for (let i = currentRound - 2; i < currentRound; i++) {
                 if (gamestate.rounds[i].p2 === gamestate.rounds[i].p1) {
